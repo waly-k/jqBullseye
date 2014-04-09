@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bullseye, a jQuery plugin by Waly Kerkeboom</title>
+    <link rel="stylesheet" href="styles/normalise.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/jquery.bullseye.css" />
+</head>
+<body>
+    <div class="slide bseye">
+    	<div class="container bsContent">
+    		<div class="logoContainer">
+				<img src="i/target.png" alt="target" width="100" height="99">
+		    	<h1 class="bsHead">Bullseye, a jQuery plugin by Waly Kerkeboom</h1>
+	    	</div>
+	    	<div class="bsDemo">
+	    		<img src="i/demopic.jpg" alt="demopic" height="500" width="920">
+	    	</div>
+	    	<div class="buttonHolder">
+	    		<a href="#" class="button" id="activateBs">Activate Bullseye demo</a><p>or</p>
+                <a href="http://i.waly.me/Eghb+" class="button">Download</a>
+	    	</div>
+            <p>
+                Available options:
+            </p>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>top: n</code></td>
+                        <td>Where n is a number. Determines bullseye position from top.</td>
+                    </tr>
+                    <tr>
+                        <td><code>right: n</code></td>
+                        <td>Where n is a number. Determines bullseye position from the right.</td>
+                    </tr>
+                    <tr>
+                        <td><code>bottom: n</code></td>
+                        <td>Where n is a number. Determines bullseye position from the bottom.</td>
+                    </tr>
+                    <tr>
+                        <td><code>left: n</code></td>
+                        <td>Where n is a number. Determines bullseye position from the left.</td>
+                    </tr>
+                    <tr>
+                        <td><code>heading: "Hello World"</code></td>
+                        <td>Determines heading content in tooltip.</td>
+                    </tr>
+                    <tr>
+                        <td><code>content: "This is content"</code></td>
+                        <td>Determines paragraph content in tooltip.</td>
+                    </tr>
+                    <tr>
+                        <td><code>orientation: "top"</code></td>
+                        <td>Determines tooltip orientation. Default value is "top", also accepts "left", "right" and "bottom"</td>
+                    </tr>
+                    <!--<tr>-->
+                        <!--<td><code>onHoverMarkAsRead: true</code></td>-->
+                        <!--<td>Determines whether tooltip will become "read" after hovering over it once. Removes animation once "read".</td>-->
+                    <!--</tr>-->
+                    <tr>
+                        <td><code>color: "#ee2200"</code></td>
+                        <td>Determines dot and dot animation color. Accepts any valid HEX value and reverts to default if HEX value is invalid.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Usage:</p>
+            <pre>
+<code>$('.element').bullseye({
+   top: 10,
+   right: 0,
+   heading: "Hello",
+   content: "World"
+});</code></pre>
+            <p>Notes:</p>
+            <ul>
+                <li>Requires jQuery.</li>
+                <li>Requires that you include the 'jquery.bullseye.css' CSS file.</li>
+            </ul>
+            <p>Acknowledgements:</p>
+            <ul>
+                <li><a href="http://www.panic.com/transmit/">Panic, Inc</a> for the idea.w</p></li>
+            </ul>
+    	</div>
+    </div>
+    <footer>
+        <script src="src/jquery-1.9.1.js"></script>
+        <script src="src/jquery.bullseye.js"></script>
+        <script src="src/app.js"></script>
+    </footer>
+</body>
+</html>

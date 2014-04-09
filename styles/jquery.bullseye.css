@@ -1,0 +1,165 @@
+.jqBullseye * {
+	box-sizing: content-box;
+}
+.jqBullseye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 1;
+    top: 300px;
+    font-family: inherit;
+    z-index: 1000;
+}
+span.bullseyePulse {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    opacity: 0;
+
+    -webkit-animation-delay: .3s;
+
+    -webkit-animation-name: 'pulse';
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes 'pulse'
+{
+    0% {
+        -webkit-transform: scale(.1);
+        opacity: 0;
+    }
+    1% {
+        -webkit-transform: scale(.1);
+        opacity: .6;
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+    }
+}
+span.bullseyeBody {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px white;
+}
+
+span.bullseyeTooltip {
+    position: absolute;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    padding:10px;
+    display: none;
+    width: 150px;
+}
+
+.defaultOrientation {
+    bottom: 30px;
+    left: -75px;
+}
+
+.bottomOrientation {
+    top: 30px;
+    left: -75px;
+}
+.leftOrientation {
+    margin-top: auto;
+    margin-bottom: auto;
+    top: -8px;
+    left: 30px;
+}
+.rightOrientation {
+    margin-top: auto;
+    margin-bottom: auto;
+    top: -8px;
+    right: 30px;
+}
+
+.bullseyeTooltip h3 {
+    margin: 0;
+}
+.bullseyeTooltip p {
+    margin: 0;
+}
+.bullseyeTooltip h3 + p {
+    margin-top: 5px;
+}
+
+span.bullseyeTooltip:before {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+
+    left:0;
+    right: 0;
+    margin: 0 auto;
+}
+
+span.bullseyeTooltip.defaultOrientation:before {
+
+    border-top: 8px solid rgba(0,0,0,.7);
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid transparent;
+
+    bottom:-16px;
+}
+
+span.bullseyeTooltip.bottomOrientation:before {
+
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid rgba(0,0,0,.7);
+    border-right:8px solid transparent;
+
+    top:-16px;
+}
+
+span.bullseyeTooltip.leftOrientation:before {
+
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid rgba(0,0,0,.7);
+
+    top: 10px;
+    left: -186px;
+}
+
+span.bullseyeTooltip.rightOrientation:before {
+
+    border-top: 8px solid transparent;
+    border-left: 8px solid rgba(0,0,0,.7);
+    border-bottom: 8px solid transparent;
+    border-right:8px solid transparent;
+
+    top: 10px;
+    right: -186px;
+}
+
+pre {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
