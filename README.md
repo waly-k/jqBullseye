@@ -2,9 +2,6 @@
 
 [Demo](http://mt.waly.me/bullseye) 
 
-## Description
-The concept is based on Panic’s implementation of these ‘bullseyes’ on their [Transmit Product Page](www.panic.com/transmit).  See the concept in action there.
-
 ## Installation
 Download de plugin JS en CSS. Zet deze neer waar je wilt en include ze op de pagina waar je ze wilt gebruiken. Let op: Voordat je bullseye aanroept, moet je jQuery aanroepen.
 
